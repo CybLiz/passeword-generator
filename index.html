@@ -17,12 +17,25 @@
 		</div>
 	</div>  -->
 
-	<div class="vh-100 d-flex align-items-center justify-content-center">
-		<button onclick="generatePassword(event)" type="submit" id="button" class=" btn btn-dark w-5 p-2">Générer un mdp</button>
+	<div class="container vh-100 d-flex align-items-center justify-content-center">
+		<div>
+			<label id="longdetext" for="sizeSelector" class="form-label " ></label>
+			<!-- <input type="number" class="form-control form-icon-trailing border border-dark rounded d-flex align-items-center justify-content-center " id="sizeSelector" name="sizeSelector"
+				 placeholder="nombre de caractères " /> -->
+
+			<input id="sizeSelector" name="sizeSelector" placeholder="Nombre de caractères "
+			type="number"
+			class="form-control form-icon-trailing ms-2 border border-dark rounded d-flex align-items-center justify-content-center user-select-all"
+				type="text" style="width: 250px; height: 38px; margin-top: -26px; margin-right: 8px; padding-left: 30px">
+		</div>
+
+		<button onclick="generatePassword(event)" type="submit" id="button" class=" btn btn-dark w-5 p-2">Générer un
+			mdp</button>
 		<div id="password"
 			class="password ms-2 border border-dark rounded d-flex align-items-center justify-content-center user-select-all"
-			style="width: 250px; height: 38px">
-			</div>
+			style="width: 250px; height: 38px; margin-top: -2px;">
+		</div>
+
 
 	</div>
 
